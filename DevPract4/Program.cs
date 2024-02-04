@@ -66,21 +66,45 @@ namespace DevPract4
         }
         static void Main(string[] args)
         {
-            string a = "0", b = "999999";
+            try
+            {
+                string a, b;
+                Console.Write("Введите два ");
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write("положительных");
+                Console.ResetColor();
+                Console.WriteLine(" числа");
 
-            Console.WriteLine("Введите первое число->");
-            Console.ForegroundColor = ConsoleColor.Green;
-            a=Console.ReadLine();
-            Console.ResetColor();
 
-            Console.WriteLine("Введите второе число->");
-            Console.ForegroundColor = ConsoleColor.Green;
-            b = Console.ReadLine();
-            Console.ResetColor();
+                Console.WriteLine("Введите первое число->");
+                Console.ForegroundColor = ConsoleColor.Green;
+                a=Console.ReadLine();
+                Console.ResetColor();
+                if (a.Contains('-'))
+                    throw new Exception("Первое число окозалось отрицательным при вводе!");
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(Sum(a, b));
-            Console.ReadKey();
+                Console.WriteLine("Введите второе число->");
+                Console.ForegroundColor = ConsoleColor.Green;
+                b = Console.ReadLine();
+                Console.ResetColor();
+                if(b.Contains('-'))
+                    throw new Exception("Второе число окозалось отрицательным при вводе!");
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(Sum(a, b));
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(ex.ToString());
+                Console.ResetColor();
+            }
+            finally
+            {
+                Console.ResetColor();
+                Console.ReadKey(false);
+            }
+            
         }
     }
 }
