@@ -11,6 +11,7 @@ namespace Ряд_Тейлора//№1
 {
     internal class Program
     {
+        #region Вычисление функции
         static void ТаблицаРядаТейлора()
         {
             double x0, x, dx;
@@ -108,6 +109,7 @@ namespace Ряд_Тейлора//№1
 
             Console.ResetColor();
         }
+        #endregion
         static void Main(string[] args)
         {
             try
