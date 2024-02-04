@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevPract4", "DevPract4\DevPract4.csproj", "{8BF12C18-7FF8-46EA-A666-97280E8CE71A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сумма чисел из строк", "DevPract4\Сумма чисел из строк.csproj", "{8BF12C18-7FF8-46EA-A666-97280E8CE71A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ряд Тейлора", "Ряд Тейлора\Ряд Тейлора.csproj", "{2B66A8F7-BA68-4646-8952-1AE4A205EBAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8BF12C18-7FF8-46EA-A666-97280E8CE71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BF12C18-7FF8-46EA-A666-97280E8CE71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BF12C18-7FF8-46EA-A666-97280E8CE71A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B66A8F7-BA68-4646-8952-1AE4A205EBAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B66A8F7-BA68-4646-8952-1AE4A205EBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B66A8F7-BA68-4646-8952-1AE4A205EBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B66A8F7-BA68-4646-8952-1AE4A205EBAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
